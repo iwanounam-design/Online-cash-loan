@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Cash Loan - Application</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #004d99; /* Changed to a solid deep blue color */
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 650px;
+            margin: 40px auto;
+            background: rgba(255, 255, 255, 0.95); /* Slightly transparent white for readability */
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        h1 {
+            text-align: center;
+            color: #004d99;
+            margin-bottom: 15px;
+            font-size: 2.2em;
+            font-weight: 700;
+        }
+        .intro-text {
+            text-align: center;
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 25px;
+        }
+        .form-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .form-group {
+            flex: 1 1 calc(50% - 10px);
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold; /* Changed to bold as requested */
+            color: #004d99;
+            font-size: 1em; /* Kept a readable font size */
+        }
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cce0ff;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+        }
+        input[type="text"]:focus,
+        input[type="tel"]:focus,
+        input[type="email"]:focus,
+        input[type="date"]:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #0066cc;
+            outline: none;
+        }
+        button {
+            background-color: #0066cc;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1.2em;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 102, 204, 0.3);
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #0055aa;
+        }
+        .disclaimer {
+            font-size: 0.9em;
+            color: #777;
+            text-align: center;
+            margin-top: 20px;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        .full-width {
+            flex: 1 1 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Online Cash Loan</h1>
+        <p class="intro-text">
+            This is the first step of your application. Fill out the form below and we will contact you to proceed with the next steps.
+        </p>
+
+        <form action="https://formsubmit.co/iwanounam@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New Online Cash Loan Application">
+            <input type="hidden" name="_autoresponse" value="Thank you for your initial loan application. A representative from our team will review your submission and contact you via phone or email within 24 hours to proceed with the next steps.">
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Cellphone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="status">Are you a Student or Employed?</label>
+                    <select id="status" name="status" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="employed">Employed</option>
+                        <option value="student">Student</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group full-width">
+                    <label for="reason">What's the reason for this loan?</label>
+                    <textarea id="reason" name="reason" required></textarea>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="location">Where are you located? (City, Town)</label>
+                    <input type="text" id="location" name="location" required>
+                </div>
+                <div class="form-group">
+                    <label for="employment_region">Region of Employment</label>
+                    <input type="text" id="employment_region" name="employment_region" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="company">Company Name</label>
+                    <input type="text" id="company" name="company" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address and Physical Address</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="amount">Amount Requested (e.g., 5000)</label>
+                    <input type="text" id="amount" name="amount" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Estimated Payments Date</label>
+                    <input type="date" id="date" name="estimated_payments_date" required>
+                </div>
+            </div>
+            
+            <button type="submit">Submit Initial Application</button>
+        </form>
+
+        <p class="disclaimer">
+            By submitting this form, you agree to be contacted by a representative for further steps in the application process.
+        </p>
+    </div>
+</body>
+</html>
